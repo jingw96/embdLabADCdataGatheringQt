@@ -8,18 +8,19 @@
 #include "adc.h"
 #include <sys/ioctl.h>
 
+#define APP_VERSION "1.0.0"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
     ui->setupUi(this);
+    qDebug() << "ADC data gathering: " << APP_VERSION;
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
-
 }
 
 //酒精传感器采集
