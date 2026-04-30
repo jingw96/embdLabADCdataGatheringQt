@@ -8,7 +8,7 @@
 #include "adc.h"
 #include <sys/ioctl.h>
 
-#define APP_VERSION "1.0.0"
+#define APP_VERSION "1.0.1"
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
